@@ -1,8 +1,8 @@
-import { list } from 'postcss'
+// import { list } from 'postcss'
 import React, {useState} from 'react'
 import Forms from './Forms'
 
-const TodoItems = ({ listItem, completeListItem, removeListItem, updateListItem}) => {
+const TodoItems = ({ list, completeListItem, removeListItem, updateListItem}) => {
 
     const [edit, setEdit] = useState({
         id: null,
@@ -28,10 +28,10 @@ const TodoItems = ({ listItem, completeListItem, removeListItem, updateListItem}
         {listItem.text}
     </div>
     <div className="icons">
-      <div className='' onClick={() => removeListItem(listItem.id)}><i class="fa-solid fa-trash-can"></i></div> 
+    <div className='text-black' onClick={() => removeListItem(listItem.id)}><i class="fa-solid fa-trash-can"></i></div> 
     <div className="" onClick={() => setEdit({id: listItem.id, value: listItem.text})}></div><i class="fa-solid fa-pen-to-square"></i>
     </div>
-         </div>
+        </div>
         ))
         
 }
