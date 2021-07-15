@@ -22,7 +22,7 @@ const TodoItems = ({ list, completeListItem, removeListItem, updateListItem}) =>
     }
     return list.map((listItem, index) => (
         
-            <div className="container mx-auto flex space-x-3 text-lg font-medium ml-8 md:ml-8">
+            <div className="flex space-x-3 items-center justify-center text-lg font-medium ml-8 md:ml-96">
         <li className="flex-auto flex space-x-3">
         <div className={listItem.isComplete ? 'line-through bg-green-300 w-1/2 flex items-center justify-center bg-black text-red-700 border rounded-lg cursor-auto m-3 px-4 py-2' : 'w-1/2 flex items-center justify-center bg-black text-white border rounded-lg cursor-auto m-3 px-4 py-2'} 
         key={index} >
