@@ -30,10 +30,10 @@ const TodoItems = ({ list, completeListItem, removeListItem, updateListItem}) =>
         {listItem.text}
     </div>
     </div>
-    <div className='flex items-center justify-center text-xl px-6 py-2 m-3 cursor-pointer border border-gray-300 rounded-lg' onClick={() => removeListItem(listItem.id)}>
+    <div className='flex items-center justify-center text-xl text-white hover:text-red-600 px-6 py-2 m-3 cursor-pointer border border-gray-300 rounded-lg' onClick={() => removeListItem(listItem.id)}>
         <i class="fas fa-trash-alt"/>
         </div> 
-    <div className="flex items-center justify-center text-xl px-6 py-2 m-3 cursor-pointer border border-gray-300 rounded-lg" onClick={() => setEdit({id: listItem.id, value: listItem.text})}>
+    <div className="flex items-center justify-center text-xl text-white hover:text-blue-500 px-6 py-2 m-3 cursor-pointer border border-gray-300 rounded-lg" onClick={() => setEdit({id: listItem.id, value: listItem.text})}>
         <i class="fas fa-edit"></i>
         </div>
     </li>
