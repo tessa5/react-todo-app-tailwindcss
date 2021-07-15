@@ -2,6 +2,7 @@ import React, {useState } from 'react'
 import Forms from './Forms'
 import TodoItems from './TodoItems'
 
+
 function Todolist() {
     const [list, setList] = useState([])
 
@@ -39,9 +40,11 @@ function Todolist() {
         });
         setList(updatedList);
     };
+
+    
     return (
-        <div className="container">
-            <h1>Today's Checklist</h1>
+        <div className="justify-center text-center">
+            <h1 className='text-4xl font-medium justify-center text-center text-white m-3 mb-3'>Today's Checklist . . .</h1>
             <Forms onSubmit={addListItem}/>
             <TodoItems
                 list={list}

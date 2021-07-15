@@ -32,7 +32,7 @@ function Forms(props) {
                 type="text"
                 placeholder="add a task"
                 value={input}
-                className=""
+                className="w-48 h-auto border px-4 py-1 rounded-lg ml-3 mb-3"
                 onChange={handleChange}
                 ref={inputRef}
                    
@@ -40,7 +40,7 @@ function Forms(props) {
             
             <button
                 onClick={handleSubmit}
-                className="bg-violet-900 text-violet-700 text-base font-semibold px-6 py-2 rounded-lg"
+                className="bg-white hover:bg-black text-black hover:text-white border border-2 border-gray-900 px-4 py-2 m-2 text-base font-medium rounded-lg"
             >update task</button>
             </>
             ) : (
@@ -49,11 +49,11 @@ function Forms(props) {
                     placeholder="Add task"
                     onChange={handleChange}
                     ref={inputRef}
-                    className=""
+                    className="w-48 h-auto border px-4 py-1 rounded-lg ml-3 mb-3"
                     value={input}
                     />
 
-                <button onClick={handleSubmit} className="">Add Task</button>
+                <button onClick={handleSubmit} className="bg-black hover:bg-white text-white hover:text-black text-base font-medium ml-3 px-6 py-2 border border-black rounded-lg">Add Task</button>
                 </>
             )}
             
