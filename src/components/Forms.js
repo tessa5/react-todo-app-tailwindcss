@@ -32,7 +32,7 @@ function Forms(props) {
                 type="text"
                 placeholder="add a task"
                 value={input}
-                className="w-48 h-auto border px-4 py-1 rounded-lg ml-3 mb-3"
+                className="w-48 h-auto border px-2 py-1 rounded-lg ml-3 mb-3"
                 onChange={handleChange}
                 ref={inputRef}
                    
